@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Envìa un correo</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Enviame un correo</h1>
+    <img class="miimagen" src="img/sho.JPG" alt="Foto De Lito" />
+    <ul>
+      <form
+        class="enviarcorreo"
+        action="https://formsubmit.co/litobaravila@gmail.com"
+        method="POST"
+      >
+        <li><label for="nombre">Ingresa tu nombre y apellido</label></li>
+        <li>
+          <input
+            type="text"
+            placeholder="Nombre y Apellido"
+            name="Nombre"
+            id="nombre"
+            required
+          />
+        </li>
+        <br />
+        <li><label for="email">Ingresa tu correo electronico</label></li>
+        <li>
+          <input
+            type="email"
+            placeholder="Tu correo"
+            name="Correoelectronico"
+            id="email"
+            required
+          />
+        </li>
+        <br />
+        <li><label for="contenido">Escribe el contenido</label></li>
+        <li>
+          <textarea
+            placeholder="Contenido del correo"
+            name="Contenidocorreo"
+            id="contenido"
+            rows="10"
+            cols="40"
+            required
+          ></textarea>
+        </li>
+        <br />
+        <button type="submit">Enviar Correo</button>
+      </form>
+    </ul>
+  </body>
+</html>

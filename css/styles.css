@@ -1,0 +1,127 @@
+/* Fuente importada*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+/*Agrandar las secciones para que el ancla solo muestre una seccion */
+article {
+  min-height: 100vh;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* Para que el scrolleo en la one page sea suave */
+  scroll-behavior: smooth;
+  font-family: "Lato", sans-serif;
+  line-height: 1.2;
+}
+/* Para quitar los puntos a los items de listas */
+ul {
+  list-style: none;
+}
+/* Encabezado: ancho, alto, reset, color de fondo, todo en el centro,
+ la sombra del encabezado y una padding para que se vea bonito */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 90px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  box-shadow: 1px 1px 5px #000;
+  padding: 1em 0em;
+  background-color: #fbfbfb;
+}
+/* ancho del logo en em para que se vea bien en pc y cel y relleno*/
+#logo {
+  width: 10em;
+  padding: 1vh;
+}
+/* los botones del menu cons sus margenes y fuentes*/
+#botoninicio, #botoncontacto {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 22px;
+}
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y 
+el margin: auto; para tenerlo centrado fácilmente*/
+Body {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  background-color: #fbfbfb;
+  color: #0f0f0f;
+  font-size: 18px;
+}
+/* tamaño fuente h1 */
+h1 {
+  font-size: 36px;
+}
+/* tamaño fuente h2 */
+h2 {
+  font-size: 28px;
+}
+/* mi foto con ese em y px me se veia bien en pc y cel */
+.miimagen {
+  max-width: 100%;
+  border-radius: 50%;
+  padding: 0.5em;
+  width: 400px;
+}
+/* boton del CV: fondo, relleno, mas relleno hacia los lados que habia 
+arriba y abajo, color de letras y tamaño de fuente */
+#botoncv {
+  background-color: #af599e;
+  padding: 1vh 2vh;
+  border-radius: 25px;
+  color: #fbfbfb;
+  font-size: 20px;
+}
+/* caja seccion contacto donde esta el titulo y el parrafo: color, fondo, letra, 
+borde redondeado, y para que se vea mejor centrado, no del ancho entero de la pag */
+#contacto1 {
+  background-color: rgba(175, 89, 158, 0.3);
+  border-radius: 10px;
+  margin: 20px 10px;
+  padding-top: 20px;
+}
+/* los parrafos tienen su padding y margen */
+p {
+  padding: 20px 10px;
+  margin: 20px 0px;
+}
+/* al parrafo contacto le modifique un poco el padding para que se viera mejor*/
+p#contacto {
+  padding: 20px;
+}
+/* las imagenes con links */
+.mail, .github, .linkedin {
+  margin: 1em 1em;
+}
+/* el pie de pagina: con su color, fondo, alto y centrado */
+footer {
+  background-color: #af599e;
+  color: #fbfbfb;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+/* el formato de la pagina de enviar el correo (formulario) hereda la mayoria 
+pero queria que tuviera ademas el estilo de contacto */
+.enviarcorreo {
+  background-color: rgba(175, 89, 158, 0.3);
+  border-radius: 10px;
+  margin: 20px 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
