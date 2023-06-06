@@ -21,6 +21,7 @@ ul {
   list-style: none;
   align-items: center;
   display: flex;
+  justify-content: center;
 }
 /* Encabezado: ancho, alto, reset, color de fondo, todo en el centro,
  la sombra del encabezado y una padding para que se vea bonito */
