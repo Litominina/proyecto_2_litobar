@@ -39,12 +39,15 @@ header {
   align-items: center;
   
 }
+
 /* tiene los items del navegador en horizontal */
 nav{
+
   align-items: center;
   display: flex;
   justify-content: right;
 }
+
 /* Para quitar los puntos a los items de listas y poner en horizontal el menu*/
 ul {
   list-style: none;
@@ -137,8 +140,15 @@ footer {
   justify-content: center;
   align-items: center;
   display: flex;
+  flex-direction: column;
 
 }
+
+p#textofooter, button#modooscuro{
+  margin: 0px;
+  padding: 0px;
+}
+
 /* el formato de la pagina de enviar el correo (formulario) hereda la mayoria 
 pero queria que tuviera ademas el estilo de contacto */
 .enviarcorreo {
@@ -147,6 +157,31 @@ pero queria que tuviera ademas el estilo de contacto */
   margin: 20px 10px;
   padding: 20px;
 }
+
+body.modooscuro{
+  background-color: #0f0f0f;
+  color: white;
+  #contacto1 {
+    background-color: #7c0061;
+  }
+  #footer{
+    background-color: #7c0061;
+  }
+  #header{
+    background-color: #7c0061;
+  }
+  .mail, .github, .linkedin {
+    background-color:#900073;
+    border-radius: 6px;
+  }
+  #logo {
+    padding: 0vh;
+    background-color: #dc1c94;
+  }
+}
+
+
+
 
 
 
@@ -169,7 +204,11 @@ pero queria que tuviera ademas el estilo de contacto */
 padding: 20px;  
 }
 
-#botoninicio:hover, #botoncontacto:hover {
+.abrir-menu{
+  display: none;
+}
+
+#botoninicio:hover, #botoncontacto:hover, .active {
   background-color: rgba(255, 110, 168, 0.15);
   padding: 20px;
 }
@@ -203,7 +242,6 @@ p#inicioparrafo, div.parte2 {
   margin: 20px 220px;
 }
 #botoncv:hover {
-  /* opacity: 0.5; */
   color:#e1e4d1;
   text-decoration: underline;
   border-color: #e1e4d1;

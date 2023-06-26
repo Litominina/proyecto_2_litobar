@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Litobar Avila</title>
+    <title>Litóbar Avila</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-       
+    
+    <header id="header">
         <!-- En cuanto a tus comentarios del primer proyecto, aunque no hacia gran
         diferencia en el codigo agregue el nav, para respetar la estructura. 
         Ademas hice en forma de ul y li la parte del menu, ya que me comentaste que 
@@ -19,10 +19,11 @@
             <a href="https://litominina.github.io/proyecto_2_litobar/">
             <img id="logo" src="img/logo3.PNG"
             alt="Logo de Litobar"></a>
-        <nav>  
-            <ul>
-                <li><a id="botoninicio" href="#inicio">Inicio</a></li>
-                <li><a id="botoncontacto" href="#Contacto">Contacto</a></li>
+            <!-- <button class="abrir-menu">Menu</button> -->
+        <nav class="nav">  
+            <ul class="nav-list">
+                <li class="menuitem"><a class="active" id="botoninicio" href="#inicio">Inicio</a></li>
+                <li class="menuitem"><a class="active" id="botoncontacto" href="#Contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -71,12 +72,13 @@
                 </article>
             </section>
     </main>
-    <footer>
+    <footer id="footer">
     <br>
-    <p id="footer">Código Latam</p>
     <br>
+    <p id="textofooter">Litóbar Avila © 2023</p>
+    <p><button id="modooscuro">Modo Oscuro</button></p>
     </footer>
 </body>    
-
+<script src="js/main.js"></script>
 
 </html>
