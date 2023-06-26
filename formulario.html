@@ -9,15 +9,16 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h1>Enviame un correo</h1>
-    <img class="miimagen" src="img/sho.JPG" alt="Foto De Lito" />
-    <ul>
+    <main>
+    <h1 id="tituloformulario">Envíame un correo</h1>
+    <img class="miimagen" src="img/Cuadrado2.png" alt="Foto De Lito" />
+    <ul id="ingresoformulario">
       <form
         class="enviarcorreo"
         action="https://formsubmit.co/litobaravila@gmail.com"
         method="POST"
       >
-        <li><label for="nombre">Ingresa tu nombre y apellido</label></li>
+        <li><label for="nombre">¿Cuál es tu nombre?</label></li>
         <li>
           <input
             type="text"
@@ -28,7 +29,7 @@
           />
         </li>
         <br />
-        <li><label for="email">Ingresa tu correo electronico</label></li>
+        <li><label for="email">¿Cuál es tu correo electronico?</label></li>
         <li>
           <input
             type="email"
@@ -39,7 +40,7 @@
           />
         </li>
         <br />
-        <li><label for="contenido">Escribe el contenido</label></li>
+        <li><label for="contenido">Cuéntame 👾</label></li>
         <li>
           <textarea
             placeholder="Contenido del correo"
@@ -54,5 +55,6 @@
         <button type="submit">Enviar Correo</button>
       </form>
     </ul>
+  </main>
   </body>
 </html>
