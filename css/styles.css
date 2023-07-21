@@ -324,7 +324,7 @@ para que este una la lado de la otra */
 /* Esto hace que la seccion de sql y power bi se ajusten a su contenido
 y tengan la misma altura a pesar que tiene cantidad de info dif */
 .sql, .powerbi{
-  width:fit-content;
+  width:50%;
   height: 745px
 }
 /* Esto hace que la seccion de tableau y python se sean 50% de la pantalla
