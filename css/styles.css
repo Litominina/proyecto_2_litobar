@@ -65,8 +65,8 @@ ul {
 }
 /* los botones del menu cons sus margenes y fuentes*/
 #botoninicio, #botoncontacto, #botonportafolio {
-  margin-left: 2px;
-  margin-right: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
   font-weight: bold;
   font-size: 15px;
   text-decoration: underline;
