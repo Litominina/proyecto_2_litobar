@@ -60,7 +60,7 @@ ul {
 }
 /* ancho del logo en em para que se vea bien en pc y cel y relleno*/
 #logo {
-  width: 10em;
+  width: 8em;
   padding: 1vh;
 }
 /* los botones del menu cons sus margenes y fuentes*/
@@ -69,6 +69,7 @@ ul {
   margin-right: 2px;
   font-weight: bold;
   font-size: 15px;
+  text-decoration: underline;
 }
 /* Para que los enlaces hereden el color de texto y no tengan subrayado */
 a {
@@ -144,7 +145,7 @@ mergenes, borde, sombra, etc */
   border-width: 2px;
   border-color:#690053;
   box-shadow: 1px 1px 5px #000;
-  width: 17em;
+  width: 15em;
 }
 /* Esta deja los parrafos (que se refiere a los sin una clase especifica
 es decir los que estan dentro del portafolio) con un margen y padding
@@ -263,6 +264,7 @@ mas espacio */
 padding: 20px;
 font-weight: bold;
 font-size: 22px;
+text-decoration: none;
 }
 /* en este momento esto no se esta usando es para el menu hamburguesa
 que intente una vez y lo quite */
@@ -359,7 +361,7 @@ o de los proyectos se pongan un poco transparentes */
 #covid19:hover, #viviendas:hover, #migracion:hover, #preppers:hover,
 #airbnb:hover, #calculadoraimc:hover, #amazonwebscraper:hover,
 #limpieza:hover, #exploracion:hover, #organizador:hover{
-  transform: scale(1.04)
+  transform: scale(1.04);
 }
 /* Esto es para que la pagina de envio de correo el titulo este centrado */
 #tituloformulario{
