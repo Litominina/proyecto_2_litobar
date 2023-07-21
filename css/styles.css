@@ -110,7 +110,7 @@ h2 {
 /* los parrafos tienen su padding y margen */
 p#inicioparrafo {
   padding: 10px 10px 30px 10px;
-  margin: 20px 0px;
+  margin: 20px 0px 0px 0px;
 }
 /* boton del CV: fondo, relleno, mas relleno hacia los lados que habia 
 arriba y abajo, color de letras y tamaño de fuente */
@@ -120,6 +120,9 @@ arriba y abajo, color de letras y tamaño de fuente */
   border-radius: 25px;
   color: #fbfbfb;
   font-size: 20px;
+}
+h2#portafolio{
+  margin-top: 45px;
 }
 /* Esto le da color de fondo rosadito a las secciones del portafolio
 hace mas circular el borde, le da margenes y padding y hace que las
@@ -159,7 +162,7 @@ p {
   flex-direction: row;
 }
 #calculadoraimc, #limpieza, #exploracion, #organizador{
-  width: 8em;
+  width: 7em;
   margin: 8px;
 }
 /* caja seccion contacto donde esta el titulo y el parrafo: color, fondo, letra, 
