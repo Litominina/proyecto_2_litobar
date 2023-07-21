@@ -121,6 +121,8 @@ arriba y abajo, color de letras y tamaño de fuente */
   color: #fbfbfb;
   font-size: 20px;
 }
+/* Esto le da espacio arriba al titulo de portafolio y el
+header no lo superpone */
 h2#portafolio{
   margin-top: 45px;
 }
@@ -157,10 +159,12 @@ p {
   padding: 5px;
   margin: 10px;
 }
+/* estos hace que las imagenes de python esten una al lado de la otra*/
 #limpieza-exploracion, #calculadora-organizador{
   display: flex;
   flex-direction: row;
 }
+/* tamaño y margen de codigos de python*/
 #calculadoraimc, #limpieza, #exploracion, #organizador{
   width: 7em;
   margin: 8px;
@@ -261,6 +265,10 @@ grande de 1024 px*/
 
 
 @media (min-width: 1024px) {
+/* El logo en desktop es un poco mas grande  */
+#logo {
+  width: 10em;
+}
 /* el padding de los botones de navegacion es mas grande, ya que hay
 mas espacio */
 #botoninicio, #botoncontacto, #botonportafolio {
@@ -268,11 +276,6 @@ padding: 20px;
 font-weight: bold;
 font-size: 22px;
 text-decoration: none;
-}
-/* en este momento esto no se esta usando es para el menu hamburguesa
-que intente una vez y lo quite */
-.abrir-menu{
-  display: none;
 }
 /* Esto es para que los botones de navegacion se pinten de rosadito cuando
 penes el mouse arriba y se active el active*/
@@ -330,9 +333,14 @@ cada una y tengan la misma altura a pesar que tiene cantidad de info dif */
   width:50%;
   height: 705px;
 }
+/* Estas imagenes son un poco mas grande en desktop */
 #covid19, #viviendas, #migracion, #preppers, #airbnb, 
 #amazonwebscraper{
   width: 20em;
+}
+/* Estas imagenes son un poco mas grande en desktop */
+#calculadoraimc, #limpieza, #exploracion, #organizador{
+  width: 9em;
 }
 /* Los margenes del la seccion de contacto se agrandan para que abarque
 mas pantalla*/
@@ -348,11 +356,6 @@ cambie un poco su imagen con borde subrayado etc */
   border-style:groove;
   border-width: 2px;
 }
-/* Esto es para que las secciones a pesar de no ocupar el 100% de la
-pantalla se le pueda hacer mas grande con espacio en blanco */
-/*  article {
-  min-height:65vh;
-}*/
 /* Esto es para que crescan un poco estas imagenes */
 .mail, .github, .linkedin {
   width: 70px;
