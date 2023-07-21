@@ -4,12 +4,21 @@
 
 
 /* MOBILE */
+/* MOBILE */
+/* MOBILE */
+/* MOBILE */
+/* MOBILE */
+/* MOBILE */
+/* MOBILE */
+/* MOBILE */
+/* MOBILE */
+
+
 
 /*Agrandar las secciones para que el ancla solo muestre una seccion */
-article {
-  min-height: 80vh;
-}
-
+/*  article {
+  min-height: 33em;
+}*/
 /* Reset */
 * {
   box-sizing: border-box;
@@ -26,7 +35,7 @@ article {
 /* Encabezado: ancho, alto, reset, color de fondo, todo en el centro,
  la sombra del encabezado y una padding para que se vea bonito */
 header {
-  position: fixed;
+  position:fixed;
   top: 0;
   left: 0;
   height: 90px;
@@ -37,35 +46,29 @@ header {
   display: flex;
   justify-content:space-between;
   align-items: center;
-  
 }
-
 /* tiene los items del navegador en horizontal */
 nav{
-
   align-items: center;
   display: flex;
   justify-content: right;
 }
-
 /* Para quitar los puntos a los items de listas y poner en horizontal el menu*/
 ul {
   list-style: none;
   display: flex;
-
 }
 /* ancho del logo en em para que se vea bien en pc y cel y relleno*/
 #logo {
   width: 10em;
   padding: 1vh;
-
 }
 /* los botones del menu cons sus margenes y fuentes*/
-#botoninicio, #botoncontacto {
-  margin-left: 10px;
-  margin-right: 10px;
+#botoninicio, #botoncontacto, #botonportafolio {
+  margin-left: 2px;
+  margin-right: 2px;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 15px;
 }
 /* Para que los enlaces hereden el color de texto y no tengan subrayado */
 a {
@@ -75,19 +78,21 @@ a {
 /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y 
 el margin: auto; para tenerlo centrado fácilmente*/
 Body {
-  background-color: #ffe7ff;
+  background-color: #fdf0fd;
   color: #0f0f0f;
   font-size: 18px;
 }
+/* Esto hace que toda la info del main tenga un ancho maximo de 1200
+para que no se estire demasiado, la info este en el centro, etc */
 main{
   max-width: 1200px;
   text-align: center;
+  justify-content: center;
   margin: auto;
 }
 /* tamaño fuente h1 */
 h1 {
   font-size: 36px;
-
 }
 /* tamaño fuente h2 */
 h2 {
@@ -99,9 +104,10 @@ h2 {
   border-radius: 50%;
   padding: 0.5em;
   width: 400px;
+  transition: 0.5s;
 }
 /* los parrafos tienen su padding y margen */
-p {
+p#inicioparrafo {
   padding: 10px 10px 30px 10px;
   margin: 20px 0px;
 }
@@ -113,6 +119,47 @@ arriba y abajo, color de letras y tamaño de fuente */
   border-radius: 25px;
   color: #fbfbfb;
   font-size: 20px;
+}
+/* Esto le da color de fondo rosadito a las secciones del portafolio
+hace mas circular el borde, le da margenes y padding y hace que las
+secciones se ajusten al contenido que tienen*/
+.sql, .powerbi, .tableau, .python {
+  background-color: rgba(255, 110, 168, 0.2);
+  border-radius: 75px;
+  margin: 20px 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: fit-content;
+  height: fit-content;
+}
+/* Esto le da estilo a las fotos de los proyectos
+mergenes, borde, sombra, etc */
+#covid19, #viviendas, #migracion, #preppers, #airbnb, #calculadoraimc, 
+#amazonwebscraper, #limpieza, #exploracion, #organizador{
+  margin-top: 8px;
+  margin-bottom: 15px;
+  margin-left:12px;
+  margin-right:12px;
+  border-style:solid;
+  border-width: 2px;
+  border-color:#690053;
+  box-shadow: 1px 1px 5px #000;
+  width: 17em;
+}
+/* Esta deja los parrafos (que se refiere a los sin una clase especifica
+es decir los que estan dentro del portafolio) con un margen y padding
+especifico */
+p {
+  padding: 5px;
+  margin: 10px;
+}
+#limpieza-exploracion, #calculadora-organizador{
+  display: flex;
+  flex-direction: row;
+}
+#calculadoraimc, #limpieza, #exploracion, #organizador{
+  width: 8em;
+  margin: 8px;
 }
 /* caja seccion contacto donde esta el titulo y el parrafo: color, fondo, letra, 
 borde redondeado, y para que se vea mejor centrado, no del ancho entero de la pag */
@@ -141,14 +188,12 @@ footer {
   align-items: center;
   display: flex;
   flex-direction: column;
-
 }
-
+/* Esto deja el margen y el padding de la info en el footer en 0 */
 p#textofooter, button#modooscuro{
   margin: 0px;
   padding: 0px;
 }
-
 /* el formato de la pagina de enviar el correo (formulario) hereda la mayoria 
 pero queria que tuviera ademas el estilo de contacto */
 .enviarcorreo {
@@ -158,22 +203,33 @@ pero queria que tuviera ademas el estilo de contacto */
   padding: 20px;
 }
 
+
+/* Parte del codigo que cambia el tema a modo oscuro */
 body.modooscuro{
+  /* Esto deja todas la letras blancas y el color de fondo casi negro */
   background-color: #0f0f0f;
   color: white;
-  #contacto1 {
+  /* Esto cambia los fondos rosaditos a magenta oscuros*/
+  #contacto1, .sql, .powerbi, .tableau, .python  {
     background-color: #7c0061;
   }
+  /* Esto pone mas oscuro el color del footer */
   #footer{
     background-color: #7c0061;
   }
+  /* Esto pone mas oscuro el color del header */
   #header{
     background-color: #7c0061;
   }
+    /* Esto le da un  fondo magente oscuro a las imagenes de contacto
+    y redondea sus puntas para mejor estetica*/
   .mail, .github, .linkedin {
     background-color:#900073;
     border-radius: 6px;
   }
+  /* Esto le quita el padding al logo asi que se vuelve un poco mas
+  grande y le da el mismo color de fondo que ya tiene el "Litobar"
+  para que el "Avila" no se pierda con el color de fondo del header*/
   #logo {
     padding: 0vh;
     background-color: #dc1c94;
@@ -181,86 +237,135 @@ body.modooscuro{
 }
 
 
+/* Parte del codigo para cuando la pantalla donde ves la pagina  es mas 
+grande de 1024 px*/
 
 
+/* DESKTOP */
+/* DESKTOP */
+/* DESKTOP */
+/* DESKTOP */
+/* DESKTOP */
+/* DESKTOP */
+/* DESKTOP */
+/* DESKTOP */
+/* DESKTOP */
+/* DESKTOP */
+/* DESKTOP */
+/* DESKTOP */
 
-
-/* DESKTOP */
-/* DESKTOP */
-/* DESKTOP */
-/* DESKTOP */
-/* DESKTOP */
-/* DESKTOP */
-/* DESKTOP */
-/* DESKTOP */
-/* DESKTOP */
-/* DESKTOP */
-/* DESKTOP */
-/* DESKTOP */
 
 
 @media (min-width: 1024px) {
-#botoninicio, #botoncontacto {
-padding: 20px;  
+/* el padding de los botones de navegacion es mas grande, ya que hay
+mas espacio */
+#botoninicio, #botoncontacto, #botonportafolio {
+padding: 20px;
+font-weight: bold;
+font-size: 22px;
 }
-
+/* en este momento esto no se esta usando es para el menu hamburguesa
+que intente una vez y lo quite */
 .abrir-menu{
   display: none;
 }
-
-#botoninicio:hover, #botoncontacto:hover, .active {
+/* Esto es para que los botones de navegacion se pinten de rosadito cuando
+penes el mouse arriba y se active el active*/
+#botoninicio:hover, #botoncontacto:hover, #botonportafolio:hover, .active {
   background-color: rgba(255, 110, 168, 0.15);
   padding: 20px;
 }
+/* Esto es para que el titulo que es mi nombre se haga mas grande y se
+ponga al lado de la foto */
 h1{
   font-size: 48px;
   text-align: left;
   padding-left: 0.2em;
 }
-
+/* Esto es para que el titulo de  las otras dos secciones sea tambien
+mas grande */
 h2{
   font-size: 32px;
 }
-article#todoelinicio {
+/* Esto es para que el en pantallas grandes mi resumen se coloque al
+lado de la foto */
+article.todoelinicio {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
 }
+/* Esto es para agrandar mi imagen */
 .miimagen {
   max-width: 400px;
   width: 3000px;
 }
+/* Esto es para que la info del inicio este alineada a la izq junto
+con la foto */
 p#inicioparrafo, div.parte2 {
   padding: 0px 10px 10px 10px;
   margin: 20px 0px;
   text-align: left;
 }
-
+/* Esto junta las secciones de (sql y power bi) y (tableau y python)
+para que este una la lado de la otra */
+#globo1, #globo2{
+  display: flex;
+  flex-direction: row;
+}
+/* Esto hace que la seccion de sql y power bi se ajusten a su contenido
+y tengan la misma altura a pesar que tiene cantidad de info dif */
+.sql, .powerbi{
+  width:fit-content;
+  height: 745px
+}
+/* Esto hace que la seccion de tableau y python se sean 50% de la pantalla
+cada una y tengan la misma altura a pesar que tiene cantidad de info dif */
+.tableau, .python {
+  width:50%;
+  height: 705px;
+}
+#covid19, #viviendas, #migracion, #preppers, #airbnb, 
+#amazonwebscraper{
+  width: 20em;
+}
+/* Los margenes del la seccion de contacto se agrandan para que abarque
+mas pantalla*/
 #contacto1 {
   margin: 20px 220px;
 }
+/* Esto es para que cuando el mouse este sobre el boton de descargar cv
+cambie un poco su imagen con borde subrayado etc */
 #botoncv:hover {
   color:#e1e4d1;
   text-decoration: underline;
   border-color: #e1e4d1;
-  border-style:groove
+  border-style:groove;
+  border-width: 2px;
 }
-
-article {
-  min-height:70vh;
-}
+/* Esto es para que las secciones a pesar de no ocupar el 100% de la
+pantalla se le pueda hacer mas grande con espacio en blanco */
+/*  article {
+  min-height:65vh;
+}*/
+/* Esto es para que crescan un poco estas imagenes */
 .mail, .github, .linkedin {
   width: 70px;
   margin: 40px;
 }
-.mail:hover, .github:hover, .linkedin:hover, #logo:hover{
-  opacity: 0.6;
+/* Esto es para que cuando el mouse este sobre el boton de los contactos
+o de los proyectos se pongan un poco transparentes */
+.mail:hover, .github:hover, .linkedin:hover, #logo:hover, 
+#covid19:hover, #viviendas:hover, #migracion:hover, #preppers:hover,
+#airbnb:hover, #calculadoraimc:hover, #amazonwebscraper:hover,
+#limpieza:hover, #exploracion:hover, #organizador:hover{
+  transform: scale(1.04)
 }
+/* Esto es para que la pagina de envio de correo el titulo este centrado */
 #tituloformulario{
   text-align: center;
 }
+/* Esto es para que la seccion de enviar correo se parezca a la de contacto */
 .enviarcorreo {
   background-color: rgba(255, 110, 168, 0.3);
   border-radius: 10px;

@@ -23,44 +23,117 @@
         <nav class="nav">  
             <ul class="nav-list">
                 <li class="menuitem"><a class="active" id="botoninicio" href="#inicio">Inicio</a></li>
+                <li class="menuitem"><a id="botonportafolio" href="#Portafolio">Portafolio</a></li>
                 <li class="menuitem"><a id="botoncontacto" href="#Contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-            <section>
-                <p id="inicio"></p>
-                <article id="todoelinicio">
-                <br>
-                <div class="parte1">
+            <section id="inicio">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                <article class="todoelinicio">
+                    <div class="parte1">
                     <img class="miimagen" src="img/Cuadrado2.png"
                     alt="Foto De Lito">
                 </div>
                 <div class="parte2">
                     <h1>Litóbar Avila</h1>
-                    <p id="inicioparrafo"><strong>Ingeniera - Analista de Datos - Gestión de equipo y clientes.</strong> Ingeniera en Electrónica, bilingüe, 
-                    con 5 años de experiencia liderando equipos en el área de calidad con foco en la gestión y administración de KPI’s, 
-                    análisis de datos y desarrollo de planes de acción orientados a la mejora intrínseca del performance, con propuestas 
-                    que definen productos y servicios entregados y encuentran solución a problemas, a través de la creación de modelos de 
-                    trabajo para la mejora continua. Sumando experiencia en ingreso y observación de data en ventas, impulsando su crecimiento y dirigiéndolas 
-                    administrativamente. Manejo SQL, HTML, CSS cómodamente y Tableau, Power BI y JavaScript como junior (aprendiendo Python).</p>
+                    <p id="inicioparrafo"><strong>Ingeniera - Analista de Datos - Gestión de equipo y clientes.</strong> 
+                    Ingeniera en Electrónica, bilingüe, con 5 años de experiencia liderando equipos con foco en análisis de datos, en la gestión y administración de KPI’s, 
+                    y desarrollo de planes de acción orientados a la mejora intrínseca del performance, con propuestas que encuentran solución a problemas,
+                    a través de la creación de modelos para la mejora continua. Sumando experiencia en ingreso y observación de data en ventas, impulsando 
+                    su crecimiento y dirigiéndolas administrativamente.  Manejo SQL, HTML, CSS además de Tableau, Power BI y JavaScript como junior (aprendiendo Python).</p>
+                    <!-- esto esta aqui para que no se tape la priemra parte de portafolio cuando oprimo el boton -->
+                    <div id="Portafolio"></div>
                     <a id="botoncv" href="https://drive.google.com/file/d/11eqX2lbWfxOjz1pmUnwnixMNj4vw86bF/view"
                     target="_blank">Descargar mi CV</a>
+                    <br>
+                    <br>
                 </div>
                 </article>
-                <p id="Contacto"></p>
-                <article> 
-                </p>
+                <article>
+                <h2>Portafolio</h2>
+                <div id="globo1">
+                <div class="sql">
+                    <h3>SQL</h3>
+                    <p class="sql1">Esta maravillosa herramienta la he aprendido por el curso de Data Analytics impartido por CoderHouse y por el Bootcamp de Alex Frebert
+                    que se encuentra en YouTube. Te dejo el link de un par de Proyectos para que les des un vistazo:</p>
+                    <h4>Limpieza de Datos Viviendas Nashville</h4>
+                    <a href="https://github.com/Litominina/ProyectosDePortafolioSQL/blob/main/PoyectoDePortafolioLimpiezadeDatos%20SQL.sql" target="_blanck">
+                    <img id="viviendas" src="img/viviendas.jpg"
+                    alt="Foto de Viviendas" width="330em"></a>
+                    <h4>Exploración de Datos Covid 19</h4>
+                    <a href="https://github.com/Litominina/ProyectosDePortafolioSQL/blob/main/PoyectoDePortafolio%20SQL.sql" target="_blanck">
+                    <img id="covid19" src="img/covid.jpg"
+                    alt="Foto Covid" width="330em"></a>
+                </div>
+                <div class="powerbi">
+                    <h3>Power BI</h3>
+                    <p>Plataforma que he aprendido gracias al curso de Data Analytics dado por CoderHouse y por el Bootcamp de Alex Frebert
+                    en YouTube. Dejo un par de proyectos para que los descargues:</p>
+                    <h4>Recidencias Definitivas en Chile 2019</h4>
+                    <a href="https://drive.google.com/file/d/11yTNPT5gBtD6l0mq6K8-5V4RIr35bQGf/view?usp=sharing" target="_blanck">
+                    <img id="migracion" src="img/migracion.jpg"
+                    alt="Foto de Migracion" width="340em"></a>
+                    <h4>Ventas Comercio Preparacionista</h4>
+                    <a href="https://drive.google.com/file/d/10walGoh5DQ94ChEkDTY48NtOhPgLUbsV/view?usp=sharing" target="_blanck">
+                    <img id="preppers" src="img/preppers.jpg"
+                    alt="Foto Preppers" width="335em"></a>
+                </div>
+                </div> 
+                <div id="globo2">              
+                <div class="tableau">
+                    <h3>Tableau</h3>
+                    <p>Esta herramienta de visualización la he aprendido gracias al Bootcamp de Alex Frebert
+                    que se encuentra en YouTube. Te dejo el link de una de visualizacion que cree:</p>
+                    <h4>Exploración de Datos Precios Airbnb</h4>
+                    <a href="https://public.tableau.com/app/profile/litobar.avila/viz/ProyectodeAirbnb/Dashboard1" target="_blanck">
+                    <img id="airbnb" src="img/airbnb.jpeg"
+                    alt="Foto Airbnb" width="332em"></a>
+                    <!-- <a href="https://github.com/Litominina/ProyectosDePortafolioSQL/blob/main/PoyectoDePortafolio%20SQL.sql" target="_blanck">
+                    <img id="covid19" src="img/covid.jpg"
+                    alt="Foto Covid"></a> -->
+                </div>
+                <div class="python">
+                    <h3>Python</h3>
+                    <p>El interesante lenguaje de python me lo ha comenzado a dislumbrar el Bootcamp de Alex Frebert
+                    en YouTube. Acá un par de códigos:</p>
+                    <h4>Amazon Web Scraper</h4>
+                    <a href="https://github.com/Litominina/pythoncito/blob/main/Proyecto%20Amazon%20Web%20Scraper.ipynb" target="_blanck">
+                    <img id="amazonwebscraper" src="img/amazonwebscraper.jpg"
+                    alt="Foto Amazon Web Scraper" width="340em"></a>
+                    <h4>Otros Códigos</h4>
+                    <p><small>Limpieza de data, Exporación de datos,<br> Calculadora IMC, Clasificador de archivos</small></p> 
+                    <div id="limpieza-exploracion">
+                    <a href="https://github.com/Litominina/pythoncito/blob/main/Limpieza%20de%20data.ipynb" target="_blanck">
+                    <img id="limpieza" src="img/limpieza.jpg"
+                    alt="Foto Limpieza de data" width="350em"></a>
+                    <a href="https://github.com/Litominina/pythoncito/blob/main/Analisis%20exploratorio%20de%20datos.ipynb" target="_blanck">
+                    <img id="exploracion" src="img/exploracion.png"
+                    alt="Exploracion de datos" width="350em"></a>
+                    </div>
+                    <div id="calculadora-organizador">
+                    <a href="https://github.com/Litominina/pythoncito/blob/main/Calculadora%20IMC.ipynb" target="_blanck">
+                    <img id="calculadoraimc" src="img/calculadoraimc.png"
+                    alt="Foto Calculadora IMC" width="350em"></a>
+                    <a href="https://github.com/Litominina/pythoncito/blob/main/Clasificador%20de%20archivos%20automatizado%20en%20el%20Explorador%20de%20archivos.ipynb" target="_blanck">
+                    <img id="organizador" src="img/escritorio.jpg"
+                    alt="Foto Clasificador" width="350em"></a>
+                    </div>
+                </div>
+                </div>
+                </article>
+                <article id="Contacto"> 
                 <section id="contacto1"></div>
                 <h2 id="contacto">¡Hablemos!</h2>
-                <p id="contacto">En una sociedad como la de hoy en día ¿cómo se puede buscar trabajo o pretender una relación laboral sin estar plenamente
-                    disponible en todas tus redes sociales y ser accesible en ellas para ser contactada? La respuesta es: no se puede, por lo 
-                    cual dejo a un click de distancia todas las maneras de contacto que te llevarán a mí.
+                <p id="contacto">Si quieres conocerme y saber más de mí, envíame un correo o un mensaje 
+                    por Linkedin y concertemos una reunión, dejo a un click de distancia todas las maneras de contacto que te llevarán a mí.
                 </p>
                 </section>
-                <!-- estaba tambien el mailto como opcion para enviar un correo, solo que me gusto màs
-                el formulario como para practicar otra cosa mas dificil, espero que igual te parezca 
-                que se cumple el objetivo -->
+                <!-- imágenes con link de gh, linkedin y correo -->
                 <a href="formulario.html" target="_blank"><img class="mail" src="img/mail.png"
                 alt="Icono mail"></a>
                 <a href="https://github.com/Litominina?tab=repositories" target="_blank">
@@ -69,6 +142,11 @@
                 <a href="https://www.linkedin.com/in/litobaravila/" target="_blanck">
                 <img class="linkedin" src="img/linkedin.png"
                 alt="Icono Linkedin"></a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
                 </article>
             </section>
     </main>
