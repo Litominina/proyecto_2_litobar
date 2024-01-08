@@ -79,7 +79,7 @@ a {
 /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y 
 el margin: auto; para tenerlo centrado fácilmente*/
 Body {
-  background-color: #fdf0fd;
+  background-color: #fffaff ;
   color: #0f0f0f;
   font-size: 18px;
 }
