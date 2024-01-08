@@ -141,7 +141,7 @@ secciones se ajusten al contenido que tienen*/
 /* Esto le da estilo a las fotos de los proyectos
 mergenes, borde, sombra, etc */
 #covid19, #viviendas, #migracion, #preppers, #airbnb, #calculadoraimc, 
-#amazonwebscraper, #limpieza, #exploracion, #organizador{
+#amazonwebscraper, #limpieza, #exploracion, #organizador, #peliculas, #femicidio{
   margin-top: 8px;
   margin-bottom: 15px;
   margin-left:12px;
@@ -334,8 +334,8 @@ cada una y tengan la misma altura a pesar que tiene cantidad de info dif */
   height: 705px;
 }
 /* Estas imagenes son un poco mas grande en desktop */
-#covid19, #viviendas, #migracion, #preppers, #airbnb, 
-#amazonwebscraper{
+#covid19, #viviendas, #migracion, #preppers, #airbnb, #peliculas,
+#amazonwebscraper, #femicidio{
   width: 20em;
 }
 /* Estas imagenes son un poco mas grande en desktop */
@@ -362,11 +362,11 @@ cambie un poco su imagen con borde subrayado etc */
   margin: 40px;
 }
 /* Esto es para que cuando el mouse este sobre el boton de los contactos
-o de los proyectos se pongan un poco transparentes */
-.mail:hover, .github:hover, .linkedin:hover, #logo:hover, 
+o de los proyectos se pongan un poco mas grandes */
+.mail:hover, .github:hover, .linkedin:hover, #logo:hover, #femicidio:hover, 
 #covid19:hover, #viviendas:hover, #migracion:hover, #preppers:hover,
 #airbnb:hover, #calculadoraimc:hover, #amazonwebscraper:hover,
-#limpieza:hover, #exploracion:hover, #organizador:hover{
+#limpieza:hover, #exploracion:hover, #organizador:hover, #peliculas:hover{
   transform: scale(1.04);
 }
 /* Esto es para que la pagina de envio de correo el titulo este centrado */
